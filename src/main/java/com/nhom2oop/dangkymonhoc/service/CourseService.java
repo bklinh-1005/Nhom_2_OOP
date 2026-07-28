@@ -38,4 +38,16 @@ public class CourseService {
     public void updateRegisteredSlots(String courseId, int registeredSlots) {
         courseRepository.updateSlots(courseId, registeredSlots);
     }
+
+    public Course createCourse(Course course) {
+        return courseRepository.save(course);
+    }
+
+    public Course updateCourse(String courseId, Course course) {
+        return courseRepository.update(courseId, course);
+    }
+
+    public boolean deleteCourse(String courseId) {
+        return courseRepository.delete(courseId);
+    }
 }

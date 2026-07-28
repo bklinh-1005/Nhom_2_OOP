@@ -20,12 +20,28 @@ public class CourseHandler {
     }
 
     @GetMapping("/{id}")
-    public Course getCourseById(@PathVariable("id") String courseId) {
-        return courseService.getCourseById(courseId);
+    public Course getCourseById(@PathVariable String id) {
+        return courseService.getCourseById(id);
     }
 
     @GetMapping("/search")
     public List<Course> searchCourses(@RequestParam String keyword) {
         return courseService.searchCourses(keyword);
+    }
+
+    @PostMapping
+    public Course createCourse(@RequestBody Course course) {
+        return courseService.createCourse(course);
+    }
+
+    @PutMapping("/{id}")
+    public Course updateCourse(@PathVariable String id,
+                               @RequestBody Course course) {
+        return courseService.updateCourse(id, course);
+    }
+
+    @DeleteMapping("/{id}")
+    public boolean deleteCourse(@PathVariable String id) {
+        return courseService.deleteCourse(id);
     }
 }

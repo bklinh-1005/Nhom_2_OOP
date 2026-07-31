@@ -55,4 +55,37 @@ public class CourseRepository {
 
         FileUtils.writeList(FILE_PATH, courses);
     }
+    public Course save(Course course) {
+        List<Course> courses = findAll();
+        courses.add(course);
+        FileUtils.writeList(FILE_PATH, courses);
+        return course;
+    }
+
+    public Course update(String courseId, Course updatedCourse) {
+        List<Course> courses = findAll();
+
+        for (int i = 0; i < courses.size(); i++) {
+            if (courses.get(i).getCourseId().equals(courseId)) {
+                courses.set(i, updatedCourse);
+                FileUtils.writeList(FILE_PATH, courses);
+                return updatedCourse;
+            }
+        }
+
+        return null;
+    }
+
+    public boolean delete(String courseId) {
+        List<Course> courses = findAll();
+
+        boolean removed = courses.removeIf(course ->
+                course.getCourseId().equals(courseId));
+
+        if (removed) {
+            FileUtils.writeList(FILE_PATH, courses);
+        }
+
+        return removed;
+    }
 }

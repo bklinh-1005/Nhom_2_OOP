@@ -8,8 +8,13 @@ import java.util.List;
 
 @Repository
 public class RegistrationRepository {
-    private static final String FILE_PATH = "src/main/resources/data/registrations.json";
 
+    private static final String FILE_PATH = "src/main/resources/data/registrations.json";
+    
+
+    public void save(List<Registration> registrations) {
+        FileUtils.writeList(FILE_PATH, registrations);
+    }
     public List<Registration> findAll() {
         return FileUtils.readList(FILE_PATH, Registration.class);
     }

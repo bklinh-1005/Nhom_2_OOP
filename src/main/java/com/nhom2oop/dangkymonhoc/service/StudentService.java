@@ -22,6 +22,11 @@ public class StudentService {
 
     public Student getStudentById(String id) {
 
+        Student studentBySid = userRepository.findByStudentId(id);
+        if (studentBySid != null) {
+            return studentBySid;
+        }
+
         User user = userRepository.findById(id);
 
         if (user instanceof Student) {

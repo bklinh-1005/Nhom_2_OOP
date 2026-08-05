@@ -10,11 +10,11 @@ import java.util.List;
 public class RegistrationRepository {
 
     private static final String FILE_PATH = "src/main/resources/data/registrations.json";
-    
 
     public void save(List<Registration> registrations) {
         FileUtils.writeList(FILE_PATH, registrations);
     }
+
     public List<Registration> findAll() {
         return FileUtils.readList(FILE_PATH, Registration.class);
     }
@@ -32,6 +32,7 @@ public class RegistrationRepository {
     public void save(Registration registration) {
         List<Registration> all = findAll();
         boolean found = false;
+
         for (int i = 0; i < all.size(); i++) {
             if (all.get(i).getRegistrationId().equals(registration.getRegistrationId())) {
                 all.set(i, registration);
@@ -39,9 +40,11 @@ public class RegistrationRepository {
                 break;
             }
         }
+
         if (!found) {
             all.add(registration);
         }
+
         FileUtils.writeList(FILE_PATH, all);
     }
 }

@@ -45,6 +45,22 @@ public class UserRepository {
     }
 
     /**
+     * Tìm sinh viên theo studentId (Mã sinh viên).
+     */
+    public Student findByStudentId(String studentId) {
+        List<Student> students = FileUtils.readList(FILE_PATH, Student.class);
+
+        for (Student student : students) {
+            if (student.getStudentId() != null
+                    && student.getStudentId().equals(studentId)) {
+                return student;
+            }
+        }
+
+        return null;
+    }
+
+    /**
      * Thêm mới hoặc cập nhật sinh viên.
      */
     public void save(User user) {

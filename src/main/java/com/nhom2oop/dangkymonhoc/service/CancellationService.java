@@ -14,31 +14,41 @@ public class CancellationService {
     @Autowired
     private RegistrationRepository registrationRepository;
 
+    @Autowired
+    private LogService logService;
+
     public void cancelRegistration(String studentId, String courseId) {
-        Registration registration = registrationRepository.findByStudentId(studentId);
+        try {
+            Registration registration = registrationRepository.findByStudentId(studentId);
 
-        if (registration == null) {
-            throw new RegistrationNotFoundException(
-                    "Không tìm thấy phiếu đăng ký của sinh viên: " + studentId);
-        }
-
-        RegistrationDetail detailToRemove = null;
-        for (RegistrationDetail detail : registration.getDetails()) {
-            if (detail.getCourse().getCourseId().equals(courseId)) {
-                detailToRemove = detail;
-                break;
+            if (registration == null) {
+                throw new RegistrationNotFoundException(
+                        "Không tìm thấy phiếu đăng ký của sinh viên: " + studentId);
             }
+
+            RegistrationDetail detailToRemove = null;
+            for (RegistrationDetail detail : registration.getDetails()) {
+                if (detail.getCourse().getCourseId().equals(courseId)) {
+                    detailToRemove = detail;
+                    break;
+                }
+            }
+
+            if (detailToRemove == null) {
+                throw new RegistrationNotFoundException(
+                        "Sinh viên " + studentId + " chưa đăng ký môn học: " + courseId);
+            }
+
+            Course course = detailToRemove.getCourse();
+            course.cancel();
+
+            registration.removeDetail(detailToRemove);
+            registrationRepository.save(registration);
+            //sửa input tránh conflict
+            logService.logCancellation(studentId, studentId, courseId, "SUCCESS", "Thành công");
+        } catch (RuntimeException ex) {
+            logService.logCancellation(studentId, studentId, courseId, "FAILED", ex.getMessage());
+            throw ex;
         }
-
-        if (detailToRemove == null) {
-            throw new RegistrationNotFoundException(
-                    "Sinh viên " + studentId + " chưa đăng ký môn học: " + courseId);
-        }
-
-        Course course = detailToRemove.getCourse();
-        course.cancel();
-
-        registration.removeDetail(detailToRemove);
-        registrationRepository.save(registration);
     }
 }

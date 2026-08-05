@@ -1,0 +1,132 @@
+[
+  {
+    "courseId": "FFS703007",
+    "courseName": "Đại số tuyến tính",
+    "credits": 3
+  },
+  {
+    "courseId": "FFS703008",
+    "courseName": "Giải tích",
+    "credits": 3
+  },
+  {
+    "courseId": "FEL703001",
+    "courseName": "Tiếng Anh 1",
+    "credits": 3
+  },
+  {
+    "courseId": "FEL703002",
+    "courseName": "Tiếng Anh 2",
+    "credits": 3
+  },
+  {
+    "courseId": "PHY703001",
+    "courseName": "Vật lý đại cương 1",
+    "credits": 3
+  },
+  {
+    "courseId": "PHY703002",
+    "courseName": "Vật lý đại cương 2",
+    "credits": 3
+  },
+  {
+    "courseId": "CSE703038",
+    "courseName": "Ngôn ngữ lập trình C",
+    "credits": 3
+  },
+  {
+    "courseId": "CSE703024",
+    "courseName": "Toán rời rạc",
+    "credits": 3
+  },
+  {
+    "courseId": "CSE703006",
+    "courseName": "Cấu trúc dữ liệu và thuật toán",
+    "credits": 3
+  },
+  {
+    "courseId": "CSE703029",
+    "courseName": "Lập trình hướng đối tượng",
+    "credits": 3
+  },
+  {
+    "courseId": "CSE702027",
+    "courseName": "Lập trình cho thiết bị di động",
+    "credits": 2
+  },
+  {
+    "courseId": "CSE703048",
+    "courseName": "Phân tích và thiết kế phần mềm",
+    "credits": 3
+  },
+  {
+    "courseId": "CSE703010",
+    "courseName": "Đánh giá và kiểm định chất lượng",
+    "credits": 3
+  },
+  {
+    "courseId": "CSE703011",
+    "courseName": "Kiến trúc máy tính",
+    "credits": 3
+  },
+  {
+    "courseId": "CSE703012",
+    "courseName": "Hệ điều hành",
+    "credits": 3
+  },
+  {
+    "courseId": "CSE703013",
+    "courseName": "Mạng máy tính",
+    "credits": 3
+  },
+  {
+    "courseId": "CSE703014",
+    "courseName": "Cơ sở dữ liệu",
+    "credits": 3
+  },
+  {
+    "courseId": "CSE703015",
+    "courseName": "Công nghệ phần mềm",
+    "credits": 3
+  },
+  {
+    "courseId": "CSE703016",
+    "courseName": "Trí tuệ nhân tạo",
+    "credits": 3
+  },
+  {
+    "courseId": "CSE703017",
+    "courseName": "Học máy",
+    "credits": 3
+  },
+  {
+    "courseId": "CSE703018",
+    "courseName": "An toàn thông tin",
+    "credits": 3
+  },
+  {
+    "courseId": "CSE703019",
+    "courseName": "Phát triển ứng dụng Web",
+    "credits": 3
+  },
+  {
+    "courseId": "CSE703020",
+    "courseName": "Đồ án cơ sở",
+    "credits": 2
+  },
+  {
+    "courseId": "CSE703021",
+    "courseName": "Đồ án chuyên ngành",
+    "credits": 2
+  },
+  {
+    "courseId": "CSE703022",
+    "courseName": "Thực tập tốt nghiệp",
+    "credits": 2
+  },
+  {
+    "courseId": "CSE703023",
+    "courseName": "Đồ án tốt nghiệp",
+    "credits": 6
+  }
+]

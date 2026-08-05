@@ -1,1 +1,177 @@
-[]
+[
+  {
+    "id": "L1",
+    "username": "lec1",
+    "passwordHash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+    "fullName": "Giảng viên 01",
+    "lecturerId": "GV01"
+  },
+  {
+    "id": "L2",
+    "username": "lec2",
+    "passwordHash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+    "fullName": "Giảng viên 02",
+    "lecturerId": "GV02"
+  },
+  {
+    "id": "L3",
+    "username": "lec3",
+    "passwordHash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+    "fullName": "Giảng viên 03",
+    "lecturerId": "GV03"
+  },
+  {
+    "id": "L4",
+    "username": "lec4",
+    "passwordHash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+    "fullName": "Giảng viên 04",
+    "lecturerId": "GV04"
+  },
+  {
+    "id": "L5",
+    "username": "lec5",
+    "passwordHash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+    "fullName": "Giảng viên 05",
+    "lecturerId": "GV05"
+  },
+  {
+    "id": "L6",
+    "username": "lec6",
+    "passwordHash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+    "fullName": "Giảng viên 06",
+    "lecturerId": "GV06"
+  },
+  {
+    "id": "L7",
+    "username": "lec7",
+    "passwordHash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+    "fullName": "Giảng viên 07",
+    "lecturerId": "GV07"
+  },
+  {
+    "id": "L8",
+    "username": "lec8",
+    "passwordHash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+    "fullName": "Giảng viên 08",
+    "lecturerId": "GV08"
+  },
+  {
+    "id": "L9",
+    "username": "lec9",
+    "passwordHash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+    "fullName": "Giảng viên 09",
+    "lecturerId": "GV09"
+  },
+  {
+    "id": "L10",
+    "username": "lec10",
+    "passwordHash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+    "fullName": "Giảng viên 10",
+    "lecturerId": "GV10"
+  },
+  {
+    "id": "L11",
+    "username": "lec11",
+    "passwordHash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+    "fullName": "Giảng viên 11",
+    "lecturerId": "GV11"
+  },
+  {
+    "id": "L12",
+    "username": "lec12",
+    "passwordHash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+    "fullName": "Giảng viên 12",
+    "lecturerId": "GV12"
+  },
+  {
+    "id": "L13",
+    "username": "lec13",
+    "passwordHash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+    "fullName": "Giảng viên 13",
+    "lecturerId": "GV13"
+  },
+  {
+    "id": "L14",
+    "username": "lec14",
+    "passwordHash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+    "fullName": "Giảng viên 14",
+    "lecturerId": "GV14"
+  },
+  {
+    "id": "L15",
+    "username": "lec15",
+    "passwordHash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+    "fullName": "Giảng viên 15",
+    "lecturerId": "GV15"
+  },
+  {
+    "id": "L16",
+    "username": "lec16",
+    "passwordHash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+    "fullName": "Giảng viên 16",
+    "lecturerId": "GV16"
+  },
+  {
+    "id": "L17",
+    "username": "lec17",
+    "passwordHash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+    "fullName": "Giảng viên 17",
+    "lecturerId": "GV17"
+  },
+  {
+    "id": "L18",
+    "username": "lec18",
+    "passwordHash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+    "fullName": "Giảng viên 18",
+    "lecturerId": "GV18"
+  },
+  {
+    "id": "L19",
+    "username": "lec19",
+    "passwordHash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+    "fullName": "Giảng viên 19",
+    "lecturerId": "GV19"
+  },
+  {
+    "id": "L20",
+    "username": "lec20",
+    "passwordHash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+    "fullName": "Giảng viên 20",
+    "lecturerId": "GV20"
+  },
+  {
+    "id": "L21",
+    "username": "lec21",
+    "passwordHash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+    "fullName": "Giảng viên 21",
+    "lecturerId": "GV21"
+  },
+  {
+    "id": "L22",
+    "username": "lec22",
+    "passwordHash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+    "fullName": "Giảng viên 22",
+    "lecturerId": "GV22"
+  },
+  {
+    "id": "L23",
+    "username": "lec23",
+    "passwordHash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+    "fullName": "Giảng viên 23",
+    "lecturerId": "GV23"
+  },
+  {
+    "id": "L24",
+    "username": "lec24",
+    "passwordHash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+    "fullName": "Giảng viên 24",
+    "lecturerId": "GV24"
+  },
+  {
+    "id": "L25",
+    "username": "lec25",
+    "passwordHash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+    "fullName": "Giảng viên 25",
+    "lecturerId": "GV25"
+  }
+]

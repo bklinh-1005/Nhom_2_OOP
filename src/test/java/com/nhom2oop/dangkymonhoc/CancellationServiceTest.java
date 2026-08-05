@@ -4,11 +4,9 @@ import com.nhom2oop.dangkymonhoc.exception.RegistrationNotFoundException;
 import com.nhom2oop.dangkymonhoc.model.*;
 import com.nhom2oop.dangkymonhoc.repository.RegistrationRepository;
 import com.nhom2oop.dangkymonhoc.service.CancellationService;
+import com.nhom2oop.dangkymonhoc.service.LogService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -41,19 +39,26 @@ public class CancellationServiceTest {
 
             @Override
             public void save(Registration registration) {
-                // Không cần ghi file thật khi test
+            }
+        };
+
+        LogService fakeLogService = new LogService() {
+            @Override
+            public void logCancellation(String username, String userId,
+                                        String courseId, String status, String detail) {
             }
         };
 
         cancellationService = new CancellationService();
-        setRepository(cancellationService, fakeRepository);
+        setField(cancellationService, "registrationRepository", fakeRepository);
+        setField(cancellationService, "logService", fakeLogService);
     }
 
-    private void setRepository(CancellationService service, RegistrationRepository repo) {
+    private void setField(Object target, String fieldName, Object value) {
         try {
-            var field = CancellationService.class.getDeclaredField("registrationRepository");
+            var field = target.getClass().getDeclaredField(fieldName);
             field.setAccessible(true);
-            field.set(service, repo);
+            field.set(target, value);
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
